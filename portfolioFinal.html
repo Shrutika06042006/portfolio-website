@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrutika Mungurwadi | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefefe;
+      color: #2c2c2c;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2c2c2c;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #7e5a3c;
+    }
+
+    header {
+      background-color: #f1e4d1;
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #704214;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      font-weight: 600;
+    }
+
+    section {
+      padding: 4rem 0;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      flex: 1.2;
+    }
+
+    .hero-text h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #3d2b1f;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .hero-image img {
+      width: 320px;
+      height: auto;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #5a3b1e;
+    }
+
+    .skills-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem 2rem;
+      margin-top: 2rem;
+      max-width: 500px;
+    }
+
+    .skills-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skills-list img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #f1e4d1;
+      padding: 1.5rem;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      background-color: #f1e4d1;
+      padding: 1.5rem;
+      border-radius: 15px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .contact-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 1rem;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .contact-form button {
+      padding: 0.8rem;
+      background-color: #7e5a3c;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #5a3b1e;
+    }
+
+    footer {
+      background-color: #f1e4d1;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    .visitor-counter {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #6e4b30;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .contact-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">Shrutika Mungurwadi</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievement">Achievement</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Hello, I'm Shrutika Mungurwadi</h2>
+      <p>I am passionate about my work. I like to do coding and learn different programming languages. My hobbies include drawing, painting, chess, and badminton.</p>
+    </div>
+    <div class="hero-image">
+      <img src="MICKYP.jpg" alt="Shrutika Mungurwadi">
+    </div>
+    <div style="width: 50%; height: 2px; background-color: #d4c4b4; margin: 3rem auto;"></div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated and enthusiastic coder with skills in several programming languages and web technologies.</p>
+    <h3>Skills</h3>
+    <ul class="skills-list">
+      <li><img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" alt="HTML">HTML5</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">CSS</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png">C++</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS">JavaScript (Basics)</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL">SQL</li>
+    </ul>
+    <div style="width: 50%; height: 2px; background-color: #d4c4b4; margin: 3rem auto;"></div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A wireframe website created to help with managing stress and time. This was a group project for a design thinking course.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>This is a group project ,done in CT lab . It is are Virtual Mouse Using Hand Gestures.</p>
+        
+      </div>
+    </div>
+    <div style="width: 50%; height: 2px; background-color: #d4c4b4; margin: 3rem auto;"></div>
+  </section>
+
+  <section class="hero" id="achievement">
+    <div class="hero-text">
+      <h2>Achievement</h2>
+    </div>
+    <div class="hero-image">
+      <img src="python 1.jpg" alt="Certificate 1">
+      <img src="python 2.jpg" alt="Certificate 2">
+      <img src="Certficate.jpg" alt="Certificate 3">
+    </div>
+    <div style="width: 50%; height: 2px; background-color: #d4c4b4; margin: 3rem auto;"></div>
+  </section>
+
+  <section class="resume" id="resume">
+    <h2>Resume</h2>
+    <div style="display: flex; justify-content: center;">
+      <img src="resume.jpg" alt="Resume" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+    </div>
+    <div style="width: 50%; height: 2px; background-color: #d4c4b4; margin: 3rem auto;"></div>
+  </section>
+
+  <section class="resume" id="education">
+    <h2>Education</h2>
+    <p>10th (SSC) - 88.60%</p>
+    <p>12th (HSC) - 79.00%</p>
+    <div style="width: 50%; height: 2px; background-color: #d4c4b4; margin: 3rem auto;"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone">
+          <p>+91 8766572867</p>
+        </div>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+          <p>shrutikamungurwadi@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location">
+          <p>Amorapoli, Dhanori, Pune</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form action="#">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number">
+          <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shrutika Mungurwadi.</p>
+    <div class="visitor-counter">
+      Visitors: <span id="counter">Loading...</span>
+    </div>
+  </footer>
+
+  <script>
+    const counter = localStorage.getItem('visitCount') || 0;
+    const newCount = parseInt(counter) + 1;
+    localStorage.setItem('visitCount', newCount);
+    document.getElementById('counter').innerText = newCount;
+  </script>
+</body>
+</html>
